@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+header {
+    background-color: rgb(175, 146, 91);
+    height: 60px;
+
+}
+
+header li {
+    display: inline;
+    margin: auto 10px;
+}
+
+header a {
+    color: rgb(153, 50, 50);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+header a :hover {
+    color: rgb(175, 27, 168);
+}
+
+header ul {
+    text-align: center;
+    padding-top: 21px;
+}
+
+header :hover {
+    color: hsl(249, 100%, 50%);
+}
