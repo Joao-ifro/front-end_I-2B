@@ -1,32 +1,58 @@
-/* <!-- Adicionar espaçamento inferior e definir uma cor para destaque, ex: margin-bottom: 20px; color: blue; -->*/
-.titulo-principal{
+/* Estilização do título principal */
+.titulo-principal {
     margin-bottom: 20px;
-     color: blue;
-}
-/*<!-- Alterar a cor do texto e adicionar um fundo para destaque, ex: color: #0f0; background-color: yellow; -->*/
-
-.destaque{
-    color: #0f0; 
-    background-color: yellow;
+    color: blue;
 }
 
-/*<!-- Adicionar um itálico e borda sutil, ex: font-style: italic; border-left: 3px solid green; padding-left: 5px; -->*/
-#especial{
-    border-left: 3px solid
-    green; padding-left: 5px;
-}
-/*<!-- Ajustar o espaçamento entre as linhas para melhor leitura, ex: line-height: 1.6; Isto irá repercurtir em todos os parágrafos -->*/
+/* Estilo para todos os parágrafos */
 p {
     line-height: 1.6;
 }
-/*<!-- Adicionar uma borda inferior para separar visualmente, ex: border-bottom: 2px solid gray; -->*/
-.bloco-um{
+
+/* Estilização para parágrafos com a classe .destaque */
+.destaque {
+    color: #0f0;
+    background-color: yellow;
+}
+
+/* Estilização para o parágrafo com ID #especial */
+#especial {
+    font-style: italic;
+    border-left: 3px solid green;
+    padding-left: 5px;
+}
+
+/* Título dentro do primeiro bloco */
+.bloco-um .titulo-bloco {
     border-bottom: 2px solid gray;
 }
-/* <!-- Alterar a cor de fundo para destacar os parágrafos internos, ex: background-color: lightgray; -->*/
-.bloco-um > p {
+
+/* Parágrafo dentro da div bloco-um */
+.bloco-um p {
     background-color: lightgray;
 }
-/* <!-- Alterar a fonte para diferenciá-lo dos outros títulos, ex: font-family: Arial, sans-serif; -->
-*/
-.titulo-bloco >item
+
+/* Título dentro do segundo bloco */
+.bloco-dois .titulo-bloco {
+    font-family: Arial, sans-serif;
+}
+
+/* Parágrafo dentro da div bloco-dois */
+.bloco-dois p {
+    padding: 10px;
+}
+
+/* Espaçamento entre itens da lista */
+.lista-itens .item {
+    margin-bottom: 5px;
+}
+
+/* Item da lista com a classe .destaque */
+.lista-itens .destaque {
+    background-color: lightblue;
+}
+
+/* Último item da lista identificado por ID */
+#ultimo-item {
+    color: darkblue;
+}
