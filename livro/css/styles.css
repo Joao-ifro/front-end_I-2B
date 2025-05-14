@@ -1,5 +1,5 @@
 img {
-    height: 265px;
+    width: 190px;
 }
 h2 {
     font-size: 24px;
@@ -34,9 +34,6 @@ body {
     color: #fff; /* Cor do texto*/
     padding: 8px 15px;
     border-radius: 20px; /* Bordas arredondadas */
-}
-img {
-    height: 265px;
 }
 span {
     font-weight: bold;
