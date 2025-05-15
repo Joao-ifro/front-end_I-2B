@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skins da Karina</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo base */
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d0d1a;
+      color: white;
+      margin: 0;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1f1f3a;
+    }
+
+    .titulo-karina {
+      font-size: 2rem;
+      color: #bb86fc;
+    }
+
+    .btn-karina {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #bb86fc;
+      color: #0d0d1a;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .skins-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .skin-card {
+      background-color: #1a1a2e;
+      border-radius: 15px;
+      padding: 1rem;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+    }
+
+    .skin-card h2 {
+      color: #bb86fc;
+    }
+
+    .skin-card img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Lightbox (modal) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal:after {
+      content: "Clique para fechar";
+      color: #ccc;
+      font-size: 0.9rem;
+      position: absolute;
+      bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo-karina">Skins da Karina</h1>
+    <a href="index.html" class="btn-karina">← Voltar ao Início</a>
+  </header>
+  <section class="best-skins">
+  <h2>Melhores Skins da Karina que eu acho:</h2>
+  <ol>
+    <li>Leona</li>
+    <li>Doom Duelist</li>
+    <li>Gemini Zodiac</li>
+  </ol>
+</section>
+
+  <main class="skins-container">
+    <section class="skin-card">
+      <h2>Skin "Leona"</h2>
+      <img src="./karina-kof-leona-skin-mobile-legends-uhdpaper.com-4K-6.2964.jpg" alt="Karina Leona">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Doom Duelist"</h2>
+      <img src="./karina-doom-duelist-skin-mobile-legends-uhdpaper.com-4K-3.jpg" alt="Doom Duelist">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Gemini Zodiac"</h2>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7p30iW4HjNn2m-SxwuC-_uuB62e6Rv94T8QNstOWB_OkexehUQpRBq3rsrGFywc-OCuqw8-R7WzEn5KB6I_5xI9XUtZq9YRxIv4npqM55_9bzM1ka01h7NfXeOuGvYRPajQRFSl8LJg/w919/selena-karina-gemini-zodiac-skin-mobile-legends-uhdpaper.com-4K-6.2821-wp.thumbnail.jpg" alt="Gemini Zodiac">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Spider Lily"</h2>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdfMRRbKUpsmEkPO6dw1km0ik2oWZ6kdWtmSKwdlfUlCBnPAP-vIOUQaFgCcQmhYWPFE9JZgTxgv-ug8PrAsQGHtpg5ybiSalwfXpRO1JRCE8Ok8PJlE6RXBEwmQ8Jd5DTtz2eEqGa1dtk/w3840-h2400-c/karina-spider-lily-skin-mobile-legends-uhdpaper.com-4K-5.jpg" alt="Spider Lily">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Christmas Carnival"</h2>
+      <img src="https://a-static.besthdwallpaper.com/christmas-carnival-karina-mobile-legends-bang-bang-mlbb-wallpaper-3840x2160-120285_54.jpg" alt="Christmas Carnival">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Blood Moon"</h2>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9CPIJojAyAYxyZOQ9KUiMVoitJ7gAAtnjV-SoerEkPVEbFGK6wApf5oowFYKGelvJJpGNTFXuF1E-88dGr3rbMif26MI71NRT9f2p0kU3PhW3SGx59vjo2pSVARkdCM-tuaqBVbIxf0bz/w919/karina-blood-moon-mobile-legends-skin-uhdpaper.com-4K-5.2869-wp.thumbnail.jpg" alt="Blood Moon">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Phantom Blade"</h2>
+      <img src="https://i.pinimg.com/736x/8b/b2/66/8bb26672e88610276d68b711346119fc.jpg" alt="Phantom Blade">
+    </section>
+
+    <section class="skin-card">
+      <h2>Skin "Black Pearl"</h2>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHZzTlE8XM9bP2r2EclDSh-FhSv7b3bYiMtvQ632y0v3OSjHCovViJevMZDeg97SYZAIiFUd4srY3vstgBpYoJn9hLyc5dsIjaPy68XfI7VMGtR-a1jgs7DnjgenR1FVlk0PYTXdKPqkXD/w5120-h2880-c/karina-black-pearl-skin-mobile-legends-uhdpaper.com-4K-2.jpg" alt="Black Pearl">
+    </section>
+  </main>
+
+  <div class="modal" id="imgModal">
+    <img id="modalImg" src="" alt="Full Image">
+  </div>
+
+  <footer>
+    <p>© 2025 | site desenvolvido por João</p>
+    <p>🎮 Mobile Legends: Bang Bang</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+
+    document.querySelectorAll('.skin-card img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.classList.add('active');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
+    });
+
+    modal.addEventListener('click', () => {
+      modal.classList.remove('active');
+      modalImg.src = '';
+    });
+  </script>
+</body>
+</html>

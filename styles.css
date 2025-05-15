@@ -33,3 +33,29 @@ header ul {
 header :hover {
     color: hsl(249, 100%, 50%);
 }
+.section-skins {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.section-skins h2 {
+  color: #bb86fc;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-skins {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(90deg, #6e00ff, #bb00ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s;
+}
+
+.btn-skins:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #b84aff;
+}

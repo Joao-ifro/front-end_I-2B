@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d1a;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.titulo-karina {
+  display: inline-block;
+  background: linear-gradient(90deg, #6200ea, #9c27b0);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #bb86fc;
+  font-size: 2rem;
+  text-shadow: 1px 1px 4px #000;
+}
+
+main {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.imagem-karina {
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(147, 0, 255, 0.5);
+}
+
+img{
+    width: 500px;
+}
+.btn-karina {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background: linear-gradient(90deg, #bb00ff, #6e00ff);
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #8e2de2;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-karina:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #b84aff;
+}
+footer{
+    text-align: center;
+}
+.karina-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  flex-wrap: wrap; /* para funcionar bem em telas menores */
+}
+
+.karina-img {
+  width: 45%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
+  max-width: 100%;
+}
+
+.karina-texto {
+  flex: 1;
+  color: #e1bee7;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.karina-texto p {
+  margin-bottom: 1rem;
+}
+.skins-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.skin-card {
+  background-color: #1a1a2e;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.3);
+  transition: transform 0.3s;
+}
+
+.skin-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #bb86fc;
+}
+
+.skin-card h2 {
+  color: #bb86fc;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.skin-card img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  max-height: 300px;
+}
+  /* ... estilo anterior ... */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* ou use 'cover' se quiser a tela toda mesmo que corte um pouco */
+  }
+
+  .modal.active {
+    display: flex;
+  }
+
+  .modal:after {
+    content: "Clique para fechar";
+    color: #ccc;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 20px;
+  }
+  .best-skins {
+  max-width: 300px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #6e00ff, #bb00ff);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #bb86fc;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.best-skins h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #9c27b0;
+}
+
+.best-skins ol {
+  list-style: decimal-leading-zero; /* 01, 02, 03 */
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.best-skins ol li {
+  margin: 0.7rem 0;
+  transition: color 0.3s;
+  cursor: default;
+}
+
+.best-skins ol li:hover {
+  color: #ff6ef4;
+  text-shadow: 0 0 8px #ff6ef4;
+}
