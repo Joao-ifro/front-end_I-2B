@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
-    /* Estilo base */
     body {
       font-family: 'Orbitron', sans-serif;
       background-color: #0d0d1a;
@@ -26,15 +25,8 @@
       color: #bb86fc;
     }
 
-    .btn-karina {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #bb86fc;
-      color: #0d0d1a;
-      border-radius: 8px;
-      text-decoration: none;
-    }
+  
+  
 
     .skins-container {
       display: flex;
@@ -63,7 +55,6 @@
       cursor: pointer;
     }
 
-    /* Lightbox (modal) */
     .modal {
       display: none;
       position: fixed;
@@ -94,38 +85,51 @@
       position: absolute;
       bottom: 20px;
     }
+
+    .best-skins ol {
+      padding-left: 2rem;
+    }
+
+    .best-skins li a {
+      color: #fdfcff;
+      text-decoration: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1 class="titulo-karina">Skins da Karina</h1>
-    <a href="index.html" class="btn-karina">← Voltar ao Início</a>
+    <a href="index.html" class="btn-karina">← Voltar para o Início</a> ou
+    <a href="karina.html" class="btn-karina">Ver sobre ela</a>
   </header>
+
   <section class="best-skins">
-  <h2>Melhores Skins da Karina que eu acho:</h2>
-  <ol>
-    <li>Leona</li>
-    <li>Doom Duelist</li>
-    <li>Gemini Zodiac</li>
-  </ol>
-</section>
+    <h2>Melhores Skins da Karina que eu acho:</h2>
+    <ol>
+      <li><a href="#" data-img="img-leona">Leona</a></li>
+      <li><a href="#" data-img="img-doom">Doom Duelist</a></li>
+      <li><a href="#" data-img="img-gemini">Gemini Zodiac</a></li>
+    </ol>
+  </section>
 
   <main class="skins-container">
     <section class="skin-card">
       <h2>Skin "Leona"</h2>
-      <img src="./karina-kof-leona-skin-mobile-legends-uhdpaper.com-4K-6.2964.jpg" alt="Karina Leona">
+      <img id="img-leona" src="./karina-kof-leona-skin-mobile-legends-uhdpaper.com-4K-6.2964.jpg" alt="Karina Leona">
     </section>
 
     <section class="skin-card">
       <h2>Skin "Doom Duelist"</h2>
-      <img src="./karina-doom-duelist-skin-mobile-legends-uhdpaper.com-4K-3.jpg" alt="Doom Duelist">
+      <img id="img-doom" src="./karina-doom-duelist-skin-mobile-legends-uhdpaper.com-4K-3.jpg" alt="Doom Duelist">
     </section>
 
     <section class="skin-card">
       <h2>Skin "Gemini Zodiac"</h2>
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7p30iW4HjNn2m-SxwuC-_uuB62e6Rv94T8QNstOWB_OkexehUQpRBq3rsrGFywc-OCuqw8-R7WzEn5KB6I_5xI9XUtZq9YRxIv4npqM55_9bzM1ka01h7NfXeOuGvYRPajQRFSl8LJg/w919/selena-karina-gemini-zodiac-skin-mobile-legends-uhdpaper.com-4K-6.2821-wp.thumbnail.jpg" alt="Gemini Zodiac">
+      <img id="img-gemini" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7p30iW4HjNn2m-SxwuC-_uuB62e6Rv94T8QNstOWB_OkexehUQpRBq3rsrGFywc-OCuqw8-R7WzEn5KB6I_5xI9XUtZq9YRxIv4npqM55_9bzM1ka01h7NfXeOuGvYRPajQRFSl8LJg/w919/selena-karina-gemini-zodiac-skin-mobile-legends-uhdpaper.com-4K-6.2821-wp.thumbnail.jpg" alt="Gemini Zodiac">
     </section>
 
+    <!-- Outras skins (sem interação especial nos nomes): -->
     <section class="skin-card">
       <h2>Skin "Spider Lily"</h2>
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdfMRRbKUpsmEkPO6dw1km0ik2oWZ6kdWtmSKwdlfUlCBnPAP-vIOUQaFgCcQmhYWPFE9JZgTxgv-ug8PrAsQGHtpg5ybiSalwfXpRO1JRCE8Ok8PJlE6RXBEwmQ8Jd5DTtz2eEqGa1dtk/w3840-h2400-c/karina-spider-lily-skin-mobile-legends-uhdpaper.com-4K-5.jpg" alt="Spider Lily">
@@ -165,6 +169,7 @@
     const modal = document.getElementById('imgModal');
     const modalImg = document.getElementById('modalImg');
 
+    // Clicar em qualquer imagem para abrir no modal
     document.querySelectorAll('.skin-card img').forEach(img => {
       img.addEventListener('click', () => {
         modal.classList.add('active');
@@ -173,10 +178,27 @@
       });
     });
 
+    // Clicar no modal para fechar
     modal.addEventListener('click', () => {
       modal.classList.remove('active');
       modalImg.src = '';
     });
+
+    // Clicar nos nomes da lista para abrir imagem correspondente
+    document.querySelectorAll('ol a[data-img]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const imgId = link.getAttribute('data-img');
+        const targetImg = document.getElementById(imgId);
+        if (targetImg) {
+          modal.classList.add('active');
+          modalImg.src = targetImg.src;
+          modalImg.alt = targetImg.alt;
+        }
+      });
+    });
   </script>
 </body>
 </html>
+
+
