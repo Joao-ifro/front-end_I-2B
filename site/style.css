@@ -29,7 +29,7 @@ main {
 
 .imagem-karina {
   width: 90%;
-  max-width: 700px;
+  max-width: 1000px;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(147, 0, 255, 0.5);
 }
@@ -189,4 +189,8 @@ footer{
   text-decoration: none;
   
 }
-
+header, footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f1f3a;
+}
