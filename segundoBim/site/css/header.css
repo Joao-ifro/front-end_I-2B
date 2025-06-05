@@ -1,0 +1,30 @@
+:root {
+    --corFundo: rgb(75, 255, 165); 
+    --tamandolink: 1.5rem;
+}
+header{
+    background-color: var(--corFundo);
+    height: 100px;
+
+}
+a{
+    font-size: var(--tamandolink);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(0, 110, 255);
+}
+.menuPrincipal {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.menuPrincipal > li:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
