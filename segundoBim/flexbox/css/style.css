@@ -1,0 +1,25 @@
+:root{
+    --cor-principal: #2f86d6;
+    --cor-secundaria-contraste: #ffca3a;
+    --cor-secundaria: #ffa500;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.secao-banner {
+    background-color: var(--cor-principal);
+    padding: 100px 0px;
+}
+body {
+    background-color: var(--cor-secundaria-contraste);
+}
+.container-banner{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+<element class="container-texto">
+Selector Specifity
