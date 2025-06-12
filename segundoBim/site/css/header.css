@@ -1,6 +1,7 @@
 :root {
     --corFundo: rgb(75, 255, 165); 
     --tamandolink: 1.5rem;
+    --tamanhoLinkMenu: 1rem;
 }
 header{
     background-color: var(--corFundo);
@@ -27,4 +28,25 @@ a:hover{
 .menuPrincipal > li:hover{
     transform: translateY(-5px);
     transition: 0.4s;
+}
+.logoMobile{
+    display: none;
+}
+@media screen and (max-width:600px){
+    header{
+        position: fixed;
+        left: 0%;
+        width: 100px;
+        height: 100vh;
+    }
+    a{
+        font-size: var(--tamanhoLinkMenu)
+    }
+    .logoMobile{
+        display: inline;
+        width: 80px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
 }
