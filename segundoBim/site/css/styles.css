@@ -1,9 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 p {
     font-size: 1rem;
 }
-
-
-
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+th, td{
+    border: 2px solid black;
+    padding: 10px;
+}
+th{
+    background-color: aqua;
+}
+td:last-child{
+    text-align: center;
+}
+table{
+    font-size: 3rem;
+    margin: auto;
+    border-collapse: collapse;
+}
 @media screen and (max-width:600px) {
 
     main,
