@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Meu Portfólio - Contato</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="menuPrincipal">
-                <li><a href="./home.html"> Home Page</a></li>
-                <li><a href="./contato.html"> Contato</a></li>
-                <li><a href="./projetos.html"> Projetos</a></li>
-                <li><a href="./sobre.html"> Sobre</a></li>
-            </ul> </nav> </nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <footer></footer>
+
+    <main>
+        <section class="contact-section">
+            <h1>Entre em Contato</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p>Você também pode me encontrar em:</p>
+            <ul class="contact-info">
+                <li>Email: joaovitorrhel11@gmail.com</li>
+                <li>Telefone: (69) 99283-8189</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 João Vitor. Todos os direitos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/seuperfil" target="_blank">GitHub</a></li>
+            <li><a href="#" target="_blank">Outra Rede Social</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
