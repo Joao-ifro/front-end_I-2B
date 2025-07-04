@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #0056b3;
+    color: #000000;
 }
 
 a {
@@ -17,20 +17,21 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration:overline;
 }
 
 main {
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #98b9f7;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 50px ;
+    border: #000000 double;
 }
 
 header {
-    background-color: #0056b3;
+    background-color: hsl(249, 62%, 50%);
     color: #fff;
     padding: 15px 20px;
     text-align: center;
@@ -60,7 +61,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background-color: #0056b3;
+    background-color:hsl(241, 50%, 52%);
     color: #fff;
     text-align: center;
     padding: 15px 20px;
@@ -186,7 +187,7 @@ footer .social-links li a:hover {
 
 .project-card a {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #8ac3ff;
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
