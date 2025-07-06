@@ -49,7 +49,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #111;
     color: #ffffff;
 }
@@ -67,7 +67,7 @@ nav ul {
     gap: 30px;
     list-style: none;
     padding: 0;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -88,7 +88,7 @@ h1 {
     font-size: 3.5em;
     margin: 20px 0;
     letter-spacing: 4px;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -101,7 +101,7 @@ main {
     text-align: center;
 }
 
-main img {
+.m3gan_index{
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -111,7 +111,7 @@ main img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-main img:hover {
+.m3gan_index:hover {
     transform: scale(1.02);
     box-shadow: 0 0 20px #c400ff, 0 0 40px #c400ff;
 }
@@ -124,7 +124,7 @@ footer {
     padding: 15px 0; /* Exemplo: padding para o footer */
     text-align: center;
     border-top: 1px solid #333; /* Exemplo: uma borda superior */
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 html, body {
@@ -138,4 +138,103 @@ body {
 
 main {
     flex: 1;
+}
+.filmes-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #9D00FF33;
+    padding: 15px;
+    width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #c400ff88;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card2 {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #efbe4233;
+    padding: 15px;
+    width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffb14488;
+}
+
+.card2 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Responsividade para os cards de filmes */
+@media (max-width: 768px) {
+    .filmes-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .card img {
+        border-radius: 8px;
+    }
+}
+h2{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 20px 0;
+    color:rgb(225, 180, 122) ;
+}
+h3{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 20px 0;
+    color:rgb(251, 122, 255) ;
+}
+.paragrafo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #dddddd;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-left: 4px solid #9D00FF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #9D00FF55;
 }
