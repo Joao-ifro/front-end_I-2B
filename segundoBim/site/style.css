@@ -67,6 +67,8 @@ nav ul {
     gap: 30px;
     list-style: none;
     padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
 }
 
 nav ul li a {
@@ -83,9 +85,11 @@ nav ul li a:hover {
 /* Título */
 h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 20px 0;
     letter-spacing: 4px;
+    font-family: 'Share Tech Mono', monospace;
+
 }
 
 /* Conteúdo principal */
@@ -120,6 +124,8 @@ footer {
     padding: 15px 0; /* Exemplo: padding para o footer */
     text-align: center;
     border-top: 1px solid #333; /* Exemplo: uma borda superior */
+    font-family: 'Share Tech Mono', monospace;
+
 }
 html, body {
     height: 100%;
