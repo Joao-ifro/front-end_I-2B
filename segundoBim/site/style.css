@@ -1,11 +1,232 @@
-/* Para tablets e telas menores */
+/* ================== RESET E BASE ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #111;
+    color: #ffffff;
+}
+
+/* ================== HEADER ================== */
+header {
+    background-color: #791ca4;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul li a:hover {
+    color: #b600e3;
+}
+
+/* ================== TITULOS ================== */
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    margin: 20px 0;
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 20px 0;
+    color: rgb(225, 180, 122);
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 20px 0;
+    color: rgb(251, 122, 255);
+}
+
+/* ================== MAIN ================== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/* ================== CONTEÚDO ================== */
+.filmes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.card, .card2 {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px #9D00FF33;
+}
+
+.card2 {
+    box-shadow: 0 0 15px #efbe4233;
+}
+
+.card:hover, .card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #c400ff88;
+}
+
+.card2:hover {
+    box-shadow: 0 0 20px #ffb14488;
+}
+
+.card img, .card2 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.m3gan_index {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #9D00FF;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #9D00FF, 0 0 30px #9D00FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.m3gan_index:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #c400ff, 0 0 40px #c400ff;
+}
+
+/* ================== PARÁGRAFOS ================== */
+.paragrafo {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #dddddd;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-left: 4px solid #9D00FF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #9D00FF55;
+}
+
+/* ================== FORMULÁRIO ================== */
+.form-contato {
+    margin: 30px auto;
+    max-width: 900px; /* Aumentado de 700px para 900px */
+    width: 100%; /* Garante que ela use todo o espaço até o máximo */
+    background-color: #1c1c1c;
+    padding: 40px; /* Aumentado de 30px para 40px */
+    border-radius: 12px;
+    box-shadow: 0 0 15px #9D00FF33;
+}
+
+
+.form-contato table {
+    width: 100%;
+    color: #fff;
+}
+
+.form-contato td {
+    padding: 12px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #9d00ff66;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-contato input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #9D00FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-contato input[type="submit"]:hover {
+    background-color: #c400ff;
+}
+
+/* ================== BOTÃO VOLTAR ================== */
+.botao-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #9D00FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Share Tech Mono', monospace;
+    transition: background-color 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #c400ff;
+}
+
+/* ================== FOOTER ================== */
+footer {
+    background-color: #1a1a1a;
+    color: #c002ff;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+/* ================== MEDIA QUERIES ================== */
+
+/* Tablets (≤768px) */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2em;
-    }
-
-    main {
-        padding: 15px;
     }
 
     nav ul {
@@ -14,12 +235,28 @@
         gap: 10px;
     }
 
+    main {
+        padding: 15px;
+    }
+
+    .filmes-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .card, .card2 {
+        width: 90%;
+        max-width: 340px;
+    }
+
     main img {
-        width: 100%; /* já tem max-width: 100% */
+        width: 100%;
     }
 }
 
-/* Para celulares pequenos */
+/* Celulares (≤480px) */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em;
@@ -40,201 +277,38 @@
     footer {
         font-size: 0.9em;
     }
-}
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #111;
-    color: #ffffff;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #791ca4;
-    padding: 20px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #b600e3;
-}
-
-/* Título */
-h1 {
-    text-align: center;
-    font-size: 3.5em;
-    margin: 20px 0;
-    letter-spacing: 4px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-/* Conteúdo principal */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
-.m3gan_index{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border: 2px solid #9D00FF;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #9D00FF, 0 0 30px #9D00FF;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.m3gan_index:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px #c400ff, 0 0 40px #c400ff;
-}
-
-/* Rodapé */
-footer {
-    /* Seus estilos atuais para o footer */
-    background-color: #1a1a1a; /* Exemplo: um fundo para o footer */
-    color: #c002ff; /* Exemplo: cor do texto */
-    padding: 15px 0; /* Exemplo: padding para o footer */
-    text-align: center;
-    border-top: 1px solid #333; /* Exemplo: uma borda superior */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-.filmes-container {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.card {
-    background-color: #1c1c1c;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #9D00FF33;
-    padding: 15px;
-    width: 360px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #c400ff88;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.card2 {
-    background-color: #1c1c1c;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #efbe4233;
-    padding: 15px;
-    width: 360px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card2:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffb14488;
-}
-
-.card2 img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-/* Responsividade para os cards de filmes */
-@media (max-width: 768px) {
-    .filmes-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .card {
-        width: 90%;
-        max-width: 350px;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
+    .card, .card2 {
         width: 100%;
         max-width: 320px;
         padding: 10px;
     }
 
-    .card img {
+    .card img, .card2 img {
         border-radius: 8px;
     }
 }
-h2{
-    text-align: center;
-    font-size: 1.6em;
-    margin: 20px 0;
-    color:rgb(225, 180, 122) ;
-}
-h3{
-    text-align: center;
-    font-size: 1.6em;
-    margin: 20px 0;
-    color:rgb(251, 122, 255) ;
-}
-.paragrafo {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #dddddd;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #1a1a1a;
-    border-left: 4px solid #9D00FF;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #9D00FF55;
+
+/* Dispositivos muito pequenos (≤360px) */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .card, .card2 {
+        padding: 8px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    .paragrafo {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .form-contato {
+        padding: 20px;
+    }
 }
